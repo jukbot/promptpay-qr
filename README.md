@@ -1,7 +1,12 @@
-# promptpay-qr [![npm version](https://badge.fury.io/js/promptpay-qr.svg)](https://badge.fury.io/js/promptpay-qr)
+# promptpay-qr 
+
+[![npm version](https://badge.fury.io/js/promptpay-qr.svg)](https://www.npmjs.com/package/promptpay-qr)
+[![download](https://img.shields.io/npm/dm/promptpay-qr.svg)](https://www.npmjs.com/package/promptpay-qt)
+[![Package Quality](https://npm.packagequality.com/shield/promptpay-qr.svg)](https://packagequality.com/#?package=promptpay-qr)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 [Mobile web app](#mobile-web-app), [command line app](#cli), and [JavaScript library](#api) to generate QR Code payload for PromptPay.
-
 
 ## Introduction
 
@@ -32,14 +37,14 @@ By generating a QR code, users of mobile banking apps can scan your QR code, and
 
 **You can quickly receive money from your home screen.**
 
-<img src="images/mobile.png" width="324" align="right" />
+<img src="https://cdn.rawgit.com/jukbot/promptpay-qr/09d57279/images/mobile.png" width="324" align="right" />
 
 For example, if you want to collect 80 Baht from each friend, you can open the app, type in 80, and show the QR code.
 [It takes less than 5 seconds](https://www.facebook.com/dtinth/videos/10208543817227100/).
 
 To use it:
 
-1. Open **Chrome** (on Android) or **Safari** (iOS).
+1. Open **Chrome** (Android) or **Safari** (iOS).
 
 2. Go to **https://promptpay2.me/**.
 
@@ -56,18 +61,22 @@ Features:
 - No personal data is sent to any server. Your PromptPay ID stays in your phone/computer.
 
 
-## CLI
+## CLI Usage
 
 **You can receive money from your terminal.**
 
 <p align="center">
-  <img src="images/terminal.png" width="400" />
+  <img src="https://cdn.rawgit.com/jukbot/promptpay-qr/09d57279/images/terminal.png" width="400" />
 </p>
 
 Install Node.js and run this command to install `promptpay-qr` in your machine:
 
 ```
 npm install -g promptpay-qr
+```
+or
+```
+yarn add global promptpay-qr
 ```
 
 Run this command to generate a QR code:
@@ -94,11 +103,11 @@ generatePayload(idOrPhoneNo, { amount })
 
 Returns a string which should be rendered as a QR code.
 
+## Contribution
 
-## References
+Pull requests are always welcome. We are always thrilled to receive pull requests and feedback, and do our best to process them as fast as possible. 
 
-- https://www.blognone.com/node/95133
-- https://www.emvco.com/emv-technologies/qrcodes/
+If you found any bugs please report issue to https://github.com/dtinth/promptpay-qr/issues
 
 
 ## Implementation in other languages
@@ -107,12 +116,25 @@ These libraries are written by other developers:
 
 - PHP: [kittinan/php-promptpay-qr](https://github.com/kittinan/php-promptpay-qr)
 
+- VueJS: [Sellsuki/vue-promptpay-qr](https://github.com/Sellsuki/vue-promptpay-qr)
+
+- Go: [PanJ/promptpay-me](https://github.com/PanJ/promptpay-me)
 
 ## Integrations with other software
 
 These plugins/integrations are written by other developers:
 
 - WordPress: [woodpeckerr/promptpay](https://github.com/woodpeckerr/promptpay) (supports shortcodes and integration with WooCommerce)
+
+## Related Projects
+
+- https://github.com/PromptPay/promptpay.github.io
+
+
+## References
+
+- https://www.blognone.com/node/95133
+- https://www.emvco.com/emv-technologies/qrcodes/
 
 
 ## License
